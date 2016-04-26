@@ -18,6 +18,14 @@ p {
 	display: none;
 }
 
+.container h1 {
+	background-image: url(../images/line.gif);
+	background-repeat: no-repeat;
+	background-position-y: 60px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
 #main-header {
 	height: 440px;
 	background: #f44336;
@@ -33,14 +41,6 @@ p {
 	text-align: center;
 }
 
-#main-content h1 {
-	background-image: url(../images/line.gif);
-	background-repeat: no-repeat;
-	background-position-y: 60px;
-  height: 70px;
-  margin-bottom: 30px;
-}
-
 .client {
 	background: #d32f2f;
 	height: 100px;
@@ -49,14 +49,6 @@ p {
 .server {
 	background: blue;
 	height: 100px;
-}
-
-#http-content h1 {
-	background-image: url(../images/line.gif);
-	background-repeat: no-repeat;
-	background-position-y: 60px;
-  height: 70px;
-  margin-bottom: 30px;
 }
 
 #http-content img {
@@ -82,4 +74,13 @@ p {
 	position: relative;
 	top: 24px;
 	width: 200px;
+}
+
+#dom-content img {
+	margin-top: 60px;
+	max-width: 50%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
