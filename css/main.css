@@ -1,0 +1,85 @@
+body {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+i { 
+    font-style: italic;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 18px;
+}
+
+#top-bar {
+	display: none;
+}
+
+#main-header {
+	height: 440px;
+	background: #f44336;
+	margin-bottom: 80px;
+}
+
+#main-header h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 300;
+	margin: 0;
+	padding-top: 125px;
+	text-align: center;
+}
+
+#main-content h1 {
+	background-image: url(../images/line.gif);
+	background-repeat: no-repeat;
+	background-position-y: 60px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.client {
+	background: #d32f2f;
+	height: 100px;
+}
+
+.server {
+	background: blue;
+	height: 100px;
+}
+
+#http-content h1 {
+	background-image: url(../images/line.gif);
+	background-repeat: no-repeat;
+	background-position-y: 60px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+#http-content img {
+	margin-top: 20px;
+	max-width: 100%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.http-methods {
+	font-size: 16px;
+	margin-left: 4%;
+	margin-top: 5%;
+}
+
+.form-get {
+	margin-top: 40px;
+}
+
+.form-get button {
+	position: relative;
+	top: 24px;
+	width: 200px;
+}
