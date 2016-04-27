@@ -126,6 +126,21 @@ ul.resources {
 	margin-left: 4%;
 }
 
+#main-header-2 {
+	height: 440px;
+	background: yellow;
+	margin-bottom: 80px;
+}
+
+#main-header-2 h1 {
+	color: blue;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+	padding-top: 125px;
+	text-align: center;
+}
+
 footer {
 	margin-top: 80px;
 	border-top: 1px solid #ccc;
