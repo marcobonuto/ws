@@ -84,3 +84,39 @@ p {
   margin-right: auto;
   margin-bottom: 60px;
 }
+
+#dev-tools-content img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 90px;
+	margin-bottom: 60px;
+}
+
+#elements-content img {
+	max-width: 100%;
+}
+
+.container-wrapper {
+	margin-bottom: 80px;
+}
+
+.container-wrapper img {
+	margin-top: 20px;
+}
+
+.display-none {
+	display: none;
+}
+
+footer {
+	margin-top: 80px;
+	border-top: 1px solid #ccc;
+	padding-top: 40px;
+	color: #A1ACB2;
+	text-align: center;
+}
+
+footer p {
+	font-size: 14px;
+	text-transform: uppercase;
+}
