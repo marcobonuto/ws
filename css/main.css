@@ -121,6 +121,11 @@ img {
 	margin-bottom: 10px !important;
 }
 
+ul.resources {
+	font-size: 16px;
+	margin-left: 4%;
+}
+
 footer {
 	margin-top: 80px;
 	border-top: 1px solid #ccc;
