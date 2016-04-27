@@ -1,0 +1,12 @@
+@media screen and (max-width: 560px) {
+	#main-header h1 {
+		font-size: 44px;
+		line-height: 54px;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	#main-header h1 {
+		padding-top: 100px;
+	}
+}
