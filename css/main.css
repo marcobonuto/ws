@@ -45,6 +45,18 @@ img {
 	text-align: center;
 }
 
+#triangle-secondary {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+  top: -100px;
+}
+
+#triangle-secondary path {
+	fill: #f44336;
+  stroke-width: 2;
+}
+
 .client {
 	background: #d32f2f;
 	height: 100px;
