@@ -95,5 +95,5 @@
 #                      #
 ########################
 
-	# Vai chegar se existe certificado de segurança, caso tenha, você poderia verificar a origem do certificado.
+	# Vai chegar se existe certificado de segurança, caso tenha, você poderia verificar a origem do certificado, data que expira, etc.
 
