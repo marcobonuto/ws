@@ -81,13 +81,13 @@
 
 ########################
 # 										 #
-#       PROFILE        #
+#       PROFILE        # -> Vazamento de memória
 #                      #
 ########################
 	
 	# Grave exatamente quais funções foram chamadas e quanto tempo cada um tomou pra ser executada.
 
-	# Quando eu terminar, eu vou poder analisar quanto tempo cada funçao levou pra ser executada. Esta visão permite que você veja quais funções teve o maior impacto sobre o desempenho e examinar os caminhos associados para essas funções.
+	# Quando eu terminar, eu vou poder analisar quanto tempo cada funçao levou pra ser executada. Esta visão permite que você veja quais funções teve o maior impacto sobre o desempenho e examinar os caminhos associados para essas funções. 
 
 ########################
 # 										 #
