@@ -1,0 +1,64 @@
+Pra poder explicar tudo isso, devemos primeiro de tudo, entender o que é a Internet e como ela funciona:
+
+					Internet nada mais é do que um emaranhado de informações: sites, serviços, imagens, videos, enfim, todo e qualquer tipo de informação.
+
+					Mas de que forma isso esta disponível e como eu tenho acesso a isso tudo?
+
+					A internet funciona basicamente da seguinte forma: você desenvolve um site, hospeda o que é necessário em um servidor e as pessoas se conectam a uma rede e conseguem acessar o que você fez através desse servidor. Para que tudo isso ocorra, é necessário que se tenha um padrão, não dá pra cada site e serviço no mundo prover o seu conteúdo de uma forma diferente, entao há a necessidade de um protocolo padrão, e esse protocolo chama-se <strong>HTTP</strong>, o que resumidamente podemos falar que nada mais é do que um conjunto de <strong>regras</strong> pré-definidas pra você escrever um texto e poder se comunicar com outro dispositivo na internet.
+
+					Quando estamos navegando na web, a todo momento o nosso navegador está enviando requisições para um servidor e o servidor, por sua vez, nos devolve uma resposta em um formato específico ou realiza uma ação de acordo com o que pedirmos para ele fazer, nessas requisições, especificamos o que chamamos de <strong>método HTTP</strong> ou <strong>verbo HTTP</strong>.
+
+					Na versão 1.1 do protocolo HTTP (que é a que todos usamos atualmente) temos 9 verbos diferentes, porem vamos dar uma breve explanação nos principais:
+
+					<ul>
+						<li><strong>GET</strong>: essa é a requisição mais comum de todas. Através dessa requisição nós pedimos a representação de um recurso: que pode ser um arquivo html, xml, json, etc. </li><br>
+						<li><strong>POST</strong>: o método POST é utilizado quando queremos criar um recurso. Quando usamos POST, os dados vão no corpo da requisição e não na URI.</li><br>
+						<li><strong>PUT</strong>: requisita que um recurso seja "guardado" na URI fornecida. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.</li><br>
+						<li><strong>DELETE</strong>: exclui o recurso especificado.</li><br>
+					</ul>
+					
+					<h1>Exemplos de quando eu uso o HTTP</h1>
+					Essa página que você está lendo foi carregada através do protocolo HTTP. O que aconteceu quando você clicou em um link ou digitou o endereço do meu site no seu navegador foi mais ou menos o seguinte: 
+					   O navegador pegou o endereço desse post, que é http://marcobonuto.com/workshop/http.html. Em seguida, ele montou uma requisição HTTP da seguinte forma(esse texto mesmo):<br>  
+
+					   GET /http/ HTTP/1.1 Host: marcobonuto.com</p>
+
+					Aí ele pegou esse texto e enviou pro servidor onde meu site está hospedado. O servidor do meu site interpretou essa requisição, viu o que era necessário, e devolveu uma resposta para o navegador num formato que ele entende: html.
+					Um outro exemplo do GET/POST:
+					Na maioria das vezes nós não fazemos as requisições HTTP manualmente, geralmente são as ferramentas que utilizamos para navegar na internet que fazem esse trabalho. Porém, quando estamos desenvolvendo software precisamos pensar nisso. Vamos supor que temos um formulário simples de login:
+					<form action="/Login/Autentica">  
+				    <label>Login:
+				        <input name="login" />
+				    </label>
+				    <br/>
+				    <label>
+				        Senha:
+				        <input name="senha" type="password" />
+				    </label>
+				    <br/>
+				    <input type="submit" value="Login" />
+					</form>
+
+					Se eu digitar meu usuário e senha no formulário e clicar no Login, minha aplicação vai montar uma requisição HTTP e enviar. A URL depois que eu clicar no login vai ficar assim: 
+					http://localhost:51819/Login/Autentica?login=meulogin&senha=senha 
+					Tá vendo que as informações de login e senha estão na url? Isso porque por padrão, se eu não especificar qual o método HTTP eu estou usando por padrão é usado o GET. Quando usamos o método GET, os dados da requisição vão na URL. 
+					Mas eu não quero fazer isso, certo? Quero mandar isso escondido de alguma forma! 
+					Pra isso, usamos o método <strong>POST</strong>.
+
+					<form action="/Login/Autentica" method="POST">  
+				    <label>Login:
+				        <input name="login" />
+				    </label>
+				    <br/>
+				    <label>
+				        Senha:
+				        <input name="senha" type="password" />
+				    </label>
+				    <br/>
+				    <input type="submit" value="Login" />
+					</form><br>
+
+					Mas onde estão as informações do login e senha? 
+					Elas estão escondidas, no corpo da requisição. Não temos acesso ao corpo quando estamos usando um navegador. 
+					Mas, pode ser que eu queira às vezes ver o que está no corpo, analisar os cabeçalhos da minha requisição e ver detalhes dela e da resposta também. Nesse caso você pode usar uma ferramenta chamada Fiddler.
+					Então, resumidamente: usamos GET quando queremos buscar um informação, quando queremos a representação de algum recurso e queremos ser capazes de compartilhar essa informação. Esse recurso pode ser: uma página, um arquivo xml ou json, uma imagem, etc. Usamos POST quando estamos lidando com informações críticas que não queremos mostrar ao usuário e/ou quando queremos criar algum recurso em nossa aplicação.</p>-->
